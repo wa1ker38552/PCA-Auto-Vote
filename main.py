@@ -54,7 +54,7 @@ s = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
 agents = 4
 
 chrome_options = Options()
-# chrome_options.add_argument("--headless=new")
+chrome_options.add_argument("--headless=new")
 drivers = [webdriver.Chrome(options=chrome_options) for i in range(agents)]
 
 # averages = {}
